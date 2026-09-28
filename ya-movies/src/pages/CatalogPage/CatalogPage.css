@@ -26,3 +26,35 @@
     grid-template-columns: 1fr;
     gap: var(--space-4);
 }
+
+/* -- Пустой результат поиска -- */
+.catalog__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-8) var(--space-5);
+    text-align: center;
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.catalog__empty-text {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.catalog__empty-btn {
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-accent);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    transition: 0.2s;
+}
+
+.catalog__empty-btn:hover {
+    background: var(--color-accent-hover);
+}
