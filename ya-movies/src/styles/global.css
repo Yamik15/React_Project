@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     color: var(--color-text);
     background-color: var(--color-bg);
-    -webkit-font-smoothing: antialised;
+    -webkit-font-smoothing: antialiased;
     min-height: 100vh;
 }
 
