@@ -1,0 +1,41 @@
+:root {
+    /* Цвета */
+    --color-bg: #0e0e0e;
+    --color-surface: #141414;
+    --color-surface-2: #1c1c1c;
+    --color-border: #262626;
+    --color-text: #f5f5f5;
+    --color-text-muted: #a0a0a0;
+    --color-accent: #e50914;
+    --color-accent-hover: #b20710;
+    --color-success: #2ecc71;
+    --color-error: #ff4d4d;
+
+    /* Типографика */
+    --font-base: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --font-base-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 40px;
+
+    /* Отступы (кратно 4px по стандарту) */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+
+    /* Радиусы и тени */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    /* Контейнер */
+    --container-max: 1280px;
+}
