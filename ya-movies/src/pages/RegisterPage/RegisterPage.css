@@ -1,0 +1,160 @@
+.register {
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.register__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+}
+
+.register__title {
+    font-size: var(--font-size-2xl);
+}
+
+.register__subtitle {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+}
+
+/* -- Форма -- */
+.register__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+}
+
+/* -- Поле формы -- */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.form-field__label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.form-field__input {
+    width: 100%;
+    padding: var(--space-3) var(--space-3);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    transition: 0.2s;
+}
+
+.form-field__input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background: var(--color-bg);
+}
+
+.form-field__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* -- Состояние ошибки -- */
+.form-field--error .form-field__input {
+    border-color: var(--color-error);
+}
+
+.form-field--error .form-field__input:focus {
+    border-color: var(--color-error);
+}
+
+.form-field__error {
+    color: var(--color-error);
+    font-size: var(--font-size-sm);
+    line-height: 1.3;
+}
+
+/* -- Кнопка отправления -- */
+.register__submit {
+    padding: var(--space-3) var(--space-5);
+    background: var(--color-accent);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: background 0.2s, transform 0.1s;
+    margin-top: var(--space-2);
+}
+
+.register__submit:hover {
+    background: var(--color-accent-hover);
+}
+
+.register__submit:active {
+    transform: translateY(1px)
+}
+
+/* -- Нижняя подпись -- */
+.register__footer-text {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.register__link {
+    color: var(--color-accent);
+}
+
+.register__link:hover {
+    text-decoration: underline;
+}
+
+/* -- Экран успеха -- */
+.register--success {
+    text-align: center;
+    align-items: center;
+    padding: var(--space-8) var(--space-4);
+}
+
+.register__success-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+}
+
+.register__btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: 0.2s;
+}
+
+.register__btn--primary {
+    background: var(--color-accent);
+    color: #ffffff;
+}
+
+.register__btn--primary:hover {
+    background: var(--color-accent-hover);
+}
+
+.register__btn--ghost {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.register__btn--ghost:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
