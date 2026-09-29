@@ -1,0 +1,47 @@
+/* Общие стили для полей (Register / Login) */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.form-field__label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.form-field__input {
+    width: 100%;
+    padding: var(--space-3);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    transition: 0.2s;
+}
+
+.form-field__input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    background: var(--color-bg);
+}
+
+.form-field__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-field--error .form-field__input {
+    border-color: var(--color-error);
+}
+
+.form-field--error .form-field__input:focus {
+    border-color: var(--color-error);
+}
+
+.form-field__error {
+    color: var(--color-error);
+    font-size: var(--font-size-sm);
+    line-height: 1.3;
+}

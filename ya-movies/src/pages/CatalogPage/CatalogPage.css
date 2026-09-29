@@ -12,7 +12,7 @@
 }
 
 .catalog__title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
 }
 
 .catalog__subtitle {
@@ -57,4 +57,29 @@
 
 .catalog__empty-btn:hover {
     background: var(--color-accent-hover);
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+    .catalog__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ноутбук */
+@media (min-width: 1024px) {
+    .catalog__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 1440px) {
+    .catalog__grid {
+        gap: var(--space-5);
+    }
 }

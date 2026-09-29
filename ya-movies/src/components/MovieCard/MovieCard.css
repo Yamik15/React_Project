@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     transition: 0.2s;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .movie-card__title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     line-height: 1.3;
 }
 
@@ -75,4 +76,11 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+    .movie-card__title {
+        font-size: var(--font-size-lg);
+    }
 }
