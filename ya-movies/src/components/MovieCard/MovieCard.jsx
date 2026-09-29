@@ -4,7 +4,7 @@ export default function MovieCard({ movie }) {
     return (
         <article className="movie-card">
             <div className="movie-card__poster-wrapper">
-                <img src={movie.poster} alt={`Постер фильма '${movie.title}'`} className='movie-card__poster' loading='lazy' />
+                <img src={movie.poster} alt={`Постер фильма «${movie.title}»`} className='movie-card__poster' loading='lazy' />
                 <span className="movie-card__rating">★ {movie.rating}</span>
             </div>
             <div className="movie-card__body">

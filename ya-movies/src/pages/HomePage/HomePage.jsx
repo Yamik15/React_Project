@@ -33,7 +33,7 @@ export default function HomePage() {
                     </article>
                     <article className="home__feature">
                         <h3 className="home__feature-title">Любое устройство</h3>
-                        <p className="home__feature-">Телефон, планшет, ноутбук - интерфейс подстроится.</p>
+                        <p className="home__feature-text">Телефон, планшет, ноутбук - интерфейс подстроится.</p>
                     </article>
                 </div>
             </section>

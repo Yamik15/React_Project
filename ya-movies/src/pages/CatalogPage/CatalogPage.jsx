@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { movies } from "../../data/movies";
-import MovieCard from "../../components/MovieCard/MovieCard";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import { movies } from "../../data/movies.js";
+import MovieCard from "../../components/MovieCard/MovieCard.jsx";
+import SearchBar from "../../components/SearchBar/SearchBar.jsx";
 import './CatalogPage.css'
 
 export default function CatalogPage() {

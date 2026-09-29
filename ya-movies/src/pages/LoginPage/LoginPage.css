@@ -46,6 +46,10 @@
     transform: translateY(1px);
 }
 
+.login__submit:hover {
+    background: var(--color-accent-hover);
+}
+
 .login__footer-text {
     text-align: center;
     color: var(--color-text-muted);

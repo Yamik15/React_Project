@@ -13,7 +13,7 @@
 
     /* Типографика */
     --font-base: "Segoe UI", system-ui, -apple-system, sans-serif;
-    --font-base-xs: 12px;
+    --font-size-xs: 12px;
     --font-size-sm: 14px;
     --font-size-base: 16px;
     --font-size-lg: 20px;

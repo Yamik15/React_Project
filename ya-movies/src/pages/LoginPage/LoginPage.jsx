@@ -70,11 +70,11 @@ export default function LoginPage() {
                 </div>
 
                 <div className="form-field">
-                    <label htmlFor="passworld-field" className="form-field__label">Пароль</label>
+                    <label htmlFor="password-field" className="form-field__label">Пароль</label>
                     <input 
                         id="password-field"
                         name="password"
-                        type="text"
+                        type="password"
                         value={values.password}
                         onChange={handleChange}
                         placeholder="Ваш пароль"
@@ -84,7 +84,7 @@ export default function LoginPage() {
                         aria-describedby={errors.password ? 'password-field-error' : undefined}
                     />
                     {errors.password && (
-                        <span id="passworld-field-error" className="form-field__error" role="alert">{errors.password}</span>
+                        <span id="password-field-error" className="form-field__error" role="alert">{errors.password}</span>
                     )}
                 </div>
                 <button type="submit" className="login__submit">Войти</button>
